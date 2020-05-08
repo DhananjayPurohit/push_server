@@ -1,21 +1,8 @@
-# PushServer
+# push_server
 
-**TODO: Add description**
+**Backend part of web push notifications written in Elixir**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `push_server` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:push_server, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/push_server](https://hexdocs.pm/push_server).
-
+1. Run `mix deps.get`
+2. Run `mix web_push.gen.keypair`
+3. Add the generated public and private keys in `config/config.exs`
+4. Start the server with `iex -S mix phx.server`
